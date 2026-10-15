@@ -18,8 +18,13 @@ namespace PracticalWork9
             do
             {
                 Console.Clear();
-                Console.WriteLine("=== Практическая работа №9. Задание 8 ===");
+               
                 Console.WriteLine();
+                Console.BackgroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Clear();
+                Console.WriteLine("здравствуйте");
+                Console.WriteLine("=== Практическая работа №9. Задание 8 ===");
 
                 // Создаем массив из 10 элементов
                 int[] numbers = new int[10];
@@ -39,7 +44,7 @@ namespace PracticalWork9
                 try
                 {
                     // поиск наименьшего элемента на четных местах.
-                    
+
 
                     int minEvenPos = int.MaxValue;
                     bool found = false;
@@ -60,7 +65,7 @@ namespace PracticalWork9
                     }
                     else
                     {
-                        
+
                         Console.WriteLine("Такого элемента нет. Первый элемент массива: " + numbers[0]);
                     }
                 }
@@ -71,10 +76,10 @@ namespace PracticalWork9
 
                 // Многократное выполнение без повторного запуска
                 Console.WriteLine();
-                Console.Write("Хотите выполнить программу еще раз? Нажмите (y): ");
+                Console.Write("Хотите выполнить программу еще раз? ");
                 string choice = Console.ReadLine();
 
-                if (choice.ToLower() != "y" && choice.ToLower() != "н")
+                if (choice.ToLower() != "да" && choice.ToLower() != "lf")
                 {
                     runAgain = false;
                 }
